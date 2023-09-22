@@ -78,7 +78,7 @@ angular.module('palladioApp.directives.files', [
 
 				scope.loadSample = function() {
 					spinnerService.spin();
-					$http.get("data/mma.palladio.json")
+					$http.get("sample.json")
 						.success(function(data) {
 							loadService.loadJson(data).then(scope.onLoad);
 						})
@@ -88,6 +88,17 @@ angular.module('palladioApp.directives.files', [
 						});
 				};
 
+				scope.loadMMAample = function() {
+					spinnerService.spin();
+					$http.get("data/mma.palladio.json")
+						.success(function(data) {
+							loadService.loadJson(data).then(scope.onLoad);
+						})
+						.error(function() {
+							alert("Seems that something went wrong");
+							spinnerService.hide();
+						});
+				};
 
 				/* Creates a new file */
 
