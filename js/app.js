@@ -26,16 +26,13 @@ var app = angular.module('palladioApp', [
 	// Filters
   'palladioTimelineComponent',
 	'palladioFacetComponent',
-	'palladioTimespanComponent',
 	// Views
-	'palladioCardsComponent',
 	'palladioMapComponent',
-	'palladioTableComponent',
 	'palladioSelectionView',
 	'palladioGraphComponent',
 	'palladioDurationView']
 	)
-	.config(function($stateProvider, $urlRouterProvider) {
+	.config(function($stateProvider, $urlRouterProvider, ) {
 
 		$urlRouterProvider.otherwise("/upload");
 

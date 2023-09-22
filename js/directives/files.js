@@ -78,7 +78,7 @@ angular.module('palladioApp.directives.files', [
 
 				scope.loadSample = function() {
 					spinnerService.spin();
-					$http.get("sample.json")
+					$http.get("data/mma.palladio.json")
 						.success(function(data) {
 							loadService.loadJson(data).then(scope.onLoad);
 						})

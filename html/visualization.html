@@ -23,15 +23,20 @@
 
     <div class="row margin-top">
       <div class="col-lg-12">
-        <a class="btn btn-default" data-ng-class="{disabled: blurFacet}" data-ng-click="addFilter('facet')">Facet</a>
-        <a class="btn btn-default" data-ng-class="{disabled: blurTimeline}" data-ng-click="addFilter('timeline')">Timeline</a>
-        <a class="btn btn-default" data-ng-class="{disabled: blurTimeSpan}" data-ng-click="addFilter('partime')">Timespan</a>
+        <a class="btn btn-default" data-ng-class="{disabled: blurFacet}" data-ng-click="addFilter('facet')">
+          Facet
+                  
+        </a>
+        <a class="btn btn-default" data-ng-class="{disabled: blurTimeline}" data-ng-click="addFilter('timeline')">
+          Timeline
+                  
+        </a>
         <div class="" data-palladio-selection-view></div>
         <div class="pull-right">
           <a class="btn btn-default" ng-class="{disabled:!hasFilters()}" data-ng-click="expandedFilters = !expandedFilters" data-ng-init="expandedFilters = true">
-  					<i data-ng-show="expandedFilters" class="fa fa-chevron-down"></i>
+            <i data-ng-show="expandedFilters" class="fa fa-chevron-down"></i>
             <i data-ng-show="!expandedFilters" class="fa fa-chevron-up"></i>
-  				</a>
+          </a>
         </div>
       </div>
     </div>
@@ -45,40 +50,4 @@
 
   </div>
 
-  <!--
-  <div class="">
-      <div id="filters-wrapper" class="">
-          <div class="row-fluid filters-header">
-              <a style="line-height:30px" data-ng-click="expandedFilters = !expandedFilters" data-ng-init="expandedFilters = true" class="pull-left">
-                  <span data-ng-show="expandedFilters"><i class="fa fa-angle-down text-center" style="width:10px"></i></span>
-                  <span data-ng-show="!expandedFilters"><i class="fa fa-angle-right text-center" style="width:10px"></i></span>
-              </a>
-
-              <div class="row-fluid" style="padding: 0px 10px 0px 20px;">
-                  <a  data-toggle="tooltip"
-                      data-original-title="Add a new Facet Filter"
-                      class="view-link selected alert alert-info"
-                      data-ng-click="addFilter('facet')"
-                      data-ng-class="{selected: filter.indexOf('facet') !== -1, blur: blurFacet}">Facet</a>
-
-                  <a  data-toggle="tooltip"
-                      data-original-title="Add a new Timeline Filter"
-                      class="view-link selected alert alert-info"
-                      data-ng-click="addFilter('timeline')"
-                      data-ng-class="{selected: filter.indexOf('timeline') !== -1, blur: blurTimeline}">TimeLine</a>
-
-                  <a  data-toggle="tooltip"
-                      data-original-title="Add a new Time Spans Filter"
-                      class="view-link selected alert alert-info"
-                      data-ng-click="addFilter('partime')"
-                      data-ng-class="{selected: filter.indexOf('partime') !== -1, blur: blurTimeSpan}">TimeSpan</a>-->
-<!--
-                  <div class="" data-palladio-selection-view></div>
-              </div>
--->
-
-</div>
-
-  </div>
-  </div>
 </div>

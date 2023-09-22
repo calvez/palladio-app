@@ -34,11 +34,8 @@ module.exports = {
         { from: "node_modules/palladio/dist/", to: "palladio" },
         { from: "node_modules/palladio-timeline-component/dist/", to: "palladio-timeline-component" },
         { from: "node_modules/palladio-facet-component/dist/", to: "palladio-facet-component" },
-        { from: "node_modules/palladio-timespan-component/dist/", to: "palladio-timespan-component" },
         { from: "node_modules/palladio-graph-component/dist/", to: "palladio-graph-component" },
         { from: "node_modules/palladio-map-component/dist/", to: "palladio-map-component" },
-        { from: "node_modules/palladio-table-component/dist/", to: "palladio-table-component" },
-        { from: "node_modules/palladio-cards-component/dist/", to: "palladio-cards-component" },
         { from: "node_modules/YASQE/dist/", to: "YASQE" },
         { from: "node_modules/YASR/dist/", to: "YASR" }
       ],

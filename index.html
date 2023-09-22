@@ -10,11 +10,8 @@
         <!-- Palladio -->
         <link type="text/css" href="assets/palladio-timeline-component/palladio-timeline-component.css" rel="stylesheet" />
         <link type="text/css" href="assets/palladio-facet-component/palladio-facet-component.css" rel="stylesheet" />
-        <link type="text/css" href="assets/palladio-timespan-component/palladio-timespan-component.css" rel="stylesheet" />
         <link type="text/css" href="assets/palladio-graph-component/palladio-graph-component.css" rel="stylesheet" />
         <link type="text/css" href="assets/palladio-map-component/palladio-map-component.css" rel="stylesheet" />
-        <link type="text/css" href="assets/palladio-table-component/palladio-table-component.css" rel="stylesheet" />
-        <link type="text/css" href="assets/palladio-cards-component/palladio-cards-component.css" rel="stylesheet" />
         <link type="text/css" href="assets/palladio/palladio.min.css" rel="stylesheet" />
         <link type="text/css" href="assets/YASQE/yasqe.min.css" rel="stylesheet" />
         <link type="text/css" href="assets/YASR/yasr.min.css" rel="stylesheet" />
@@ -72,21 +69,6 @@
                   <a ui-sref="/visualization" ui-sref-opts="{reload: reload}" data-ng-click="setLayout('graph')" class="short">Graph</a>
               </li>
 
-              <li data-ng-show="files.length"
-                  data-ng-class="{'active' : location.path() == '/visualization' && layout=='table'}">
-                  <a ui-sref="/visualization" ui-sref-opts="{reload: reload}" data-ng-click="setLayout('table')" class="short">Table</a>
-              </li>
-
-              <li data-ng-show="files.length"
-                  data-ng-class="{'active' : location.path() == '/visualization' && layout=='grid'}">
-                  <a ui-sref="/visualization" ui-sref-opts="{reload: reload}" data-ng-click="setLayout('grid')" class="short">Gallery</a>
-              </li>
-
-              <!--<li data-ng-show="files.length"
-                  data-ng-class="{'active' : location.path() == '/visualization' && layout=='facet'}">
-                  <a ui-sref="/visualization" ui-sref-opts="{reload: reload}" data-ng-click="setLayout('facet')" class="short">Facet</a>
-              </li>-->
-
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -122,11 +104,8 @@
         <script src="assets/palladio/palladio.min.js"></script>
         <script src="assets/palladio-timeline-component/palladio-timeline-component.min.js"></script>
         <script src="assets/palladio-facet-component/palladio-facet-component.min.js"></script>
-        <script src="assets/palladio-timespan-component/palladio-timespan-component.min.js"></script>
         <script src="assets/palladio-graph-component/palladio-graph-component.min.js"></script>
         <script src="assets/palladio-map-component/palladio-map-component.min.js"></script>
-        <script src="assets/palladio-table-component/palladio-table-component.min.js"></script>
-        <script src="assets/palladio-cards-component/palladio-cards-component.min.js"></script>
         <script src="assets/YASQE/yasqe.min.js"></script>
         <script src="assets/YASR/yasr.min.js"></script>
         <script src="js/controllers.js"></script>
