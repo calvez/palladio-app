@@ -579,9 +579,9 @@ angular.module('palladio.controllers', ['palladio.services', 'palladio'])
 						$('#filters').prepend('<li><div id="' + newTLId + '"></div></li>');
 						componentService.add('timeline', "#" + newTLId, {
 							showControls: true,
-							showSettings: true,
+							showSettings: false,
 							showAccordion: true,
-							height: 250
+							height: 150
 						}, $scope);
 					}
 					break;
@@ -591,7 +591,7 @@ angular.module('palladio.controllers', ['palladio.services', 'palladio'])
 						$('#filters').prepend('<li><div id="' + newId + '"></div></li>');
 						componentService.add('facet', "#" + newId, {
 							showControls: true,
-							showSettings: true,
+							showSettings: false,
 							showAccordion: true,
 							showDropArea: false,
 							height: "200px",
