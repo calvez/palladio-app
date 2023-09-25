@@ -54,7 +54,7 @@ angular.module('palladio.controllers', ['palladio.services', 'palladio'])
 
 		$scope.files = dataService.getFiles();
 
-		$scope.data = [];
+		$scope.data = $http.get("data/mma.palladio.json");
 
 		// let access location from template
 		$rootScope.location = $location;
@@ -559,11 +559,11 @@ angular.module('palladio.controllers', ['palladio.services', 'palladio'])
 		};
 
 		componentService.promiseAdd('graph', "#graph-view-with-settings", {
-			showSettings: true
+			showSettings: false
 		});
 
 		componentService.promiseAdd('map', "#map-view-with-settings", {
-			showSettings: true
+			showSettings: false
 		});
 
 
